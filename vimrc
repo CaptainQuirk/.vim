@@ -35,6 +35,8 @@ let mapleader = ","
 "endif
 
 
+
+
 let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
@@ -46,3 +48,30 @@ set modifiable
 let g:UltiSnipsUsePythonVersion = 2
 
 set et!
+
+
+""""""""""""""""""""""""""""""""""""""
+" NERDTree                           "
+""""""""""""""""""""""""""""""""""""""
+
+" → Opening/Closing NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
+
+
+""""""""""""""""""""""""""""""""""""""
+" Fugitive                           "
+""""""""""""""""""""""""""""""""""""""
+
+" → git status
+nnoremap <leader>gs :Git status -s<CR>
+
+" → git blame
+nnoremap <leader>gb :Gblame<CR>
+
+" → git commit
+nnoremap <leader>gc :Gcommit<CR>
+
+" → git diff
+nnoremap <leader>gd :Gdiff<CR>
+
+
