@@ -1,11 +1,9 @@
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
-"filetype plugin indent on
 
-"syntax on
 
-let mapleader = ","
+
 
 """""""""""""""""""""""""""""""
 " SOLARIZED                   "
@@ -48,6 +46,60 @@ set modifiable
 let g:UltiSnipsUsePythonVersion = 2
 
 set et!
+
+""""""""""""""""""""""""""""""""""""""
+" General Configuration              "
+""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
+
+"Automatically reload .vimrc if it changes
+autocmd! bufwritepost .vimrc source %
+
+"syntax on
+" INTERACTIONS "
+""""""""""""""""
+
+" → leader is set to comma, faster to find
+let mapleader = ","
+
+" → Using the escape key to go out of insert mode is tedious
+imap kj <ESC>
+
+
+
+
+" INTERFACE "
+"""""""""""""
+
+" Displaying line numbers
+set number
+
+" INDENTING "
+"""""""""""""
+
+" → Indenting automatically
+set autoindent
+" → Transform tab key press to space
+set expandtab
+
+" → One tab key press equals two space chars
+set tabstop=2
+
+" → Automatically shifted lines shift by 2 spaces chars
+set shiftwidth=2
+
+" → Round the shift length to a number multiple of shiftwidth
+set shiftround
+
+" → Uses shiftwidth to insert what needs to be inserted in front of a line
+set smarttab
+
+""""""""""""""""""""""""""""""""""""""
+" Ack                                "
+""""""""""""""""""""""""""""""""""""""
+
+" → Bringing :Ack up
+nnoremap <leader>f :Ack<space>
 
 
 """"""""""""""""""""""""""""""""""""""
