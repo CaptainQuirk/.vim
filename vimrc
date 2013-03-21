@@ -62,10 +62,37 @@ autocmd! bufwritepost .vimrc source %
 " → leader is set to comma, faster to find
 let mapleader = ","
 
+
+" BEHAVIOR "
+""""""""""""
+
+" → Deleting with backspace in a more user-friendly way
+set backspace=indent,eol,start
 " → Using the escape key to go out of insert mode is tedious
 imap kj <ESC>
 
+" FILE HANDLING "
+"""""""""""""""""
 
+" → Do not use swap files
+set noswapfile
+
+
+" SEARCHING "
+"""""""""""""
+
+set gdefault
+set ignorecase
+set smartcase
+
+" With this, the search begins without having
+" to push enter
+set incsearch
+
+" We want highlighted search but also a way
+" to remove the hightlighting when finished
+set hlsearch
+silent nnoremap <CR> :noh<CR><CR>
 
 
 " INTERFACE "
@@ -73,6 +100,17 @@ imap kj <ESC>
 
 " Displaying line numbers
 set number
+
+" Displaying ruler
+set ruler
+
+" No wrapping
+set nowrap
+
+" ENCODING "
+""""""""""""
+set encoding=utf-8
+set fileencoding=utf-8
 
 " INDENTING "
 """""""""""""
@@ -106,8 +144,9 @@ nnoremap <leader>f :Ack<space>
 " NERDTree                           "
 """"""""""""""""""""""""""""""""""""""
 
-" → Opening/Closing NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
+" → Opening/Closing NERDTree, mirroring existing tree if it exists
+"   in another tab
+nnoremap <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
 
 """"""""""""""""""""""""""""""""""""""
