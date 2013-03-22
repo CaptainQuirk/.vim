@@ -148,7 +148,7 @@ nmap <leader>L mQgewvu`Q
 
 """"""""""""""""""""""""""""""""""""""
 " Ack                                "
-"h"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
 
 " → Bringing :Ack up
 nnoremap <leader>a :Ack<space>
@@ -180,3 +180,21 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gd :Gdiff<CR>
 
 
+""""""""""""""""""""""""""""""""""""""
+" CtrlP                              "
+""""""""""""""""""""""""""""""""""""""
+
+" → Searching for files in folder with .git
+" as a root reference if it exists
+nnoremap <leader>pt :CtrlP<CR>
+
+" → Searching in buffers
+nnoremap <leader>pb :CtrlPMRU<CR>
+
+""""""""""""""""""""""""""""""""""""""
+" W3m                                "
+""""""""""""""""""""""""""""""""""""""
+
+nnoremap <leader>w :W3mTab
+
+let g:w3m#homepage = "https://duckduckgo.com/"
