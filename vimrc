@@ -86,13 +86,13 @@ set ignorecase
 set smartcase
 
 " With this, the search begins without having
-" to push enter
+" to press enter
 set incsearch
 
 " We want highlighted search but also a way
-" to remove the hightlighting when finished
+" to toggle the hightlighting when finished
 set hlsearch
-silent nnoremap <CR> :noh<CR><CR>
+nnoremap <leader>f :set hlsearch! hlsearch?<CR>
 
 
 " INTERFACE "
@@ -107,10 +107,12 @@ set ruler
 " No wrapping
 set nowrap
 
+
 " ENCODING "
 """"""""""""
 set encoding=utf-8
 set fileencoding=utf-8
+
 
 " INDENTING "
 """""""""""""
@@ -132,12 +134,24 @@ set shiftround
 " → Uses shiftwidth to insert what needs to be inserted in front of a line
 set smarttab
 
+
+" UTILITIES "
+"""""""""""""
+
+" upper/lower word
+nmap <leader>u mQviwU`Q
+nmap <leader>l mQviwu`Q
+
+" upper/lower first char of word
+nmap <leader>U mQgewvU`Q
+nmap <leader>L mQgewvu`Q
+
 """"""""""""""""""""""""""""""""""""""
 " Ack                                "
-""""""""""""""""""""""""""""""""""""""
+"h"""""""""""""""""""""""""""""""""""""
 
 " → Bringing :Ack up
-nnoremap <leader>f :Ack<space>
+nnoremap <leader>a :Ack<space>
 
 
 """"""""""""""""""""""""""""""""""""""
