@@ -198,3 +198,11 @@ nnoremap <leader>pb :CtrlPMRU<CR>
 nnoremap <leader>w :W3mTab
 
 let g:w3m#homepage = "https://duckduckgo.com/"
+
+""""""""""""""""""""""""""""""""""""""
+" EasyTags                           "
+""""""""""""""""""""""""""""""""""""""
+
+let g:easytags_auto_highlight=0
+let g:easytags_dynamic_files=1
+let g:easytags_by_filetype='~/.vimtagsft'
