@@ -45,7 +45,7 @@ set modifiable
 
 let g:UltiSnipsUsePythonVersion = 2
 
-set et!
+"set et!
 
 """"""""""""""""""""""""""""""""""""""
 " General Configuration              "
@@ -186,10 +186,13 @@ nnoremap <leader>gd :Gdiff<CR>
 
 " → Searching for files in folder with .git
 " as a root reference if it exists
-nnoremap <leader>pt :CtrlP<CR>
+nnoremap <leader>pf :CtrlP<CR>
 
 " → Searching in buffers
 nnoremap <leader>pb :CtrlPMRU<CR>
+
+" → Searching in tags
+nnoremap <leader>pt :CtrlPBufTag<CR>
 
 """"""""""""""""""""""""""""""""""""""
 " W3m                                "
@@ -199,6 +202,15 @@ nnoremap <leader>w :W3mTab
 
 let g:w3m#homepage = "https://duckduckgo.com/"
 
+
+""""""""""""""""""""""""""""""""""""""
+" UltiSnips                          "
+""""""""""""""""""""""""""""""""""""""
+
+" → Expanding snippet in insert mode
+inoremap <tab> :UltiSnipsExpandTrigger 
+
+
 """"""""""""""""""""""""""""""""""""""
 " EasyTags                           "
 """"""""""""""""""""""""""""""""""""""
@@ -206,3 +218,6 @@ let g:w3m#homepage = "https://duckduckgo.com/"
 let g:easytags_auto_highlight=0
 let g:easytags_dynamic_files=1
 let g:easytags_by_filetype='~/.vimtagsft'
+let g:ctrlp_mruf_max=25
+let g:ctrlp_by_filename=1
+let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javascript':'--language-force=javascript --javascript-types=fv',}
