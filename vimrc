@@ -55,6 +55,20 @@ filetype plugin indent on
 "Automatically reload .vimrc if it changes
 autocmd! bufwritepost .vimrc source %
 
+" Some file types should wrap their text
+function! s:setupWrapping()
+  set wrap
+  set linebreak
+  set textwidth=72
+  set nolist
+endfunction
+
+if has("autocmd")
+" Make sure all mardown files have the correct filetype set and setup wrapping
+  autocmd BufRead,BufNewFile *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.txt setf markdown
+  autocmd FileType markdown call s:setupWrapping()
+endif
+
 "syntax on
 " INTERACTIONS "
 """"""""""""""""
@@ -71,11 +85,18 @@ set backspace=indent,eol,start
 " → Using the escape key to go out of insert mode is tedious
 imap kj <ESC>
 
+" → cwd is always the working directory of the active buffer
+set autochdir
+
+
 " FILE HANDLING "
 """""""""""""""""
 
 " → Do not use swap files
 set noswapfile
+
+" → Cakephp files are treated as php files
+autocmd BufRead,BufNewFile *.ctp set filetype=php
 
 
 " SEARCHING "
@@ -207,7 +228,7 @@ let g:w3m#homepage = "https://duckduckgo.com/"
 " UltiSnips                          "
 """"""""""""""""""""""""""""""""""""""
 
-
+nnoremap <leader>u :UltiSnipsEdit<CR>
 
 
 """"""""""""""""""""""""""""""""""""""

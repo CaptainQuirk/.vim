@@ -9,3 +9,19 @@ snippet popup-simple "Eadv - A simple popup" b
 </div>
 <!-- Fin Popup « $1 » -->
 endsnippet
+
+snippet slide-content "Eadv - A simple slide content" b
+<!-- Contenu principal-->
+  <img src="media/images/$1" width="$2" height="$3" alt="$4"/>
+endsnippet
+
+snippet slide-content-map "Eadv - Slide content with map" b
+<!-- Contenu principal et sa map-->
+  img[src=media/images/$1][width=$2][height=$3][alt=$4][usemap=#$5]
+  <map name="$5">
+    <!-- Zones de navigation au tap -->
+    area[shape][coords][href=][alt=][data-swipe-to]*$6
+    <!-- Fin zones de navigation au tap -->
+  </map>
+<!-- Fin Contenu principal et sa map-->
+endsnippet
