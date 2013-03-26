@@ -45,7 +45,7 @@ set modifiable
 
 let g:UltiSnipsUsePythonVersion = 2
 
-"set et!
+set et!
 
 """"""""""""""""""""""""""""""""""""""
 " General Configuration              "
@@ -207,8 +207,7 @@ let g:w3m#homepage = "https://duckduckgo.com/"
 " UltiSnips                          "
 """"""""""""""""""""""""""""""""""""""
 
-" → Expanding snippet in insert mode
-inoremap <tab> :UltiSnipsExpandTrigger 
+
 
 
 """"""""""""""""""""""""""""""""""""""
