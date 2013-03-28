@@ -35,15 +35,15 @@ silent! call pathogen#helptags()
 
 
 
-let g:solarized_termcolors=256
-set t_Co=256
+let g:solarized_termcolors=16
+set t_Co=16
 set background=dark
 colorscheme solarized
 
 
 set modifiable
 
-let g:UltiSnipsUsePythonVersion = 2
+
 
 set et!
 
@@ -227,7 +227,7 @@ let g:w3m#homepage = "https://duckduckgo.com/"
 """"""""""""""""""""""""""""""""""""""
 " UltiSnips                          "
 """"""""""""""""""""""""""""""""""""""
-
+let g:UltiSnipsUsePythonVersion = 2
 nnoremap <leader>u :UltiSnipsEdit<CR>
 
 
