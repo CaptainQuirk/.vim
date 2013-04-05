@@ -189,7 +189,7 @@ nnoremap <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 """"""""""""""""""""""""""""""""""""""
 
 " → git status
-nnoremap <leader>gs :Git status -s<CR>
+nnoremap <leader>gs :Gstatus<CR>
 
 " → git blame
 nnoremap <leader>gb :Gblame<CR>
