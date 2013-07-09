@@ -241,3 +241,10 @@ let g:easytags_by_filetype='~/.vimtagsft'
 let g:ctrlp_mruf_max=25
 let g:ctrlp_by_filename=1
 let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javascript':'--language-force=javascript --javascript-types=fv',}
+
+
+""""""""""""""""""""""""""""""""""""""
+" Zencoding                          "
+""""""""""""""""""""""""""""""""""""""
+
+let g:user_zen_leader_key = '<C-i>'
