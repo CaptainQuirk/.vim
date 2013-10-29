@@ -53,7 +53,7 @@ set et!
 filetype plugin indent on
 
 "Automatically reload .vimrc if it changes
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
 
 " Some file types should wrap their text
 function! s:setupWrapping()
