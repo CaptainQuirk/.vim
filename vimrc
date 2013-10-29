@@ -65,7 +65,7 @@ endfunction
 
 if has("autocmd")
 " Make sure all mardown files have the correct filetype set and setup wrapping
-  autocmd BufRead,BufNewFile *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.txt setf markdown
+  autocmd BufRead,BufNewFile *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.txt set ft=markdown
   "autocmd FileType markdown call s:setupWrapping()
 endif
 
