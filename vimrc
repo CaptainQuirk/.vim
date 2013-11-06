@@ -183,6 +183,8 @@ nnoremap <leader>a :Ack<space>
 " file opened in vim, while not getting focus
 autocmd VimEnter * exe 'NERDTree' | wincmd l 
 
+" → Shows hidden files and folders by default
+let NERDTreeShowHidden=1
 
 " → Opening/Closing NERDTree, mirroring existing tree if it exists
 "   in another tab
