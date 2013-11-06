@@ -179,6 +179,11 @@ nnoremap <leader>a :Ack<space>
 " NERDTree                           "
 """"""""""""""""""""""""""""""""""""""
 
+" → Opening NERDTree from the start, even with no
+" file opened in vim, while not getting focus
+autocmd VimEnter * exe 'NERDTree' | wincmd l 
+
+
 " → Opening/Closing NERDTree, mirroring existing tree if it exists
 "   in another tab
 nnoremap <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
