@@ -186,6 +186,9 @@ autocmd VimEnter * exe 'NERDTree' | wincmd l
 " → Shows hidden files and folders by default
 let NERDTreeShowHidden=1
 
+" → Light everything up
+let NERDChristmasTree=1
+
 " → Opening/Closing NERDTree, mirroring existing tree if it exists
 "   in another tab
 nnoremap <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
