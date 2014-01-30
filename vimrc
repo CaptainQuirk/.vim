@@ -55,6 +55,8 @@ filetype plugin indent on
 "Automatically reload .vimrc if it changes
 autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
 
+au BufNewFile,BufRead *.ctp set filetype=php.html
+
 " Some file types should wrap their text
 function! s:setupWrapping()
   set wrap
@@ -84,9 +86,6 @@ let mapleader = ","
 set backspace=indent,eol,start
 " → Using the escape key to go out of insert mode is tedious
 imap kj <ESC>
-
-" → cwd is always the working directory of the active buffer
-set autochdir
 
 
 " FILE HANDLING "
@@ -258,3 +257,9 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 """"""""""""""""""""""""""""""""""""""
 
 let g:user_zen_leader_key = '<C-i>'
+
+""""""""""""""""""""""""""""""""""""""
+" Vim rooter                         "
+""""""""""""""""""""""""""""""""""""""
+
+let g:rooter_change_directory_for_non_project_files = 1
