@@ -1,7 +1,26 @@
 snippet echopre "PHP - simple debug function" b
+echo __LINE__ . " <b>$1</b> : <br />";
 echo '<pre>';
-print_r($1);
+print_r($$1);
 echo '</pre>';
+endsnippet
+
+snippet echopredie "PHP - simple debug function that dies" b
+echo __LINE__ . " <b>$1</b> : <br />";
+echo '<pre>';
+print_r($$1);
+echo '</pre>';die;
+endsnippet
+
+snippet echobr "PHP - one line debug function" b
+echo __LINE__ . " <b>$1</b> : {\$$1}<br/>";
+endsnippet
+
+snippet cakelink "Cake PHP - Router link" b
+  <?php echo Router::url(array(
+    'controller' => '',
+    'action'     => ''
+  ), true) ?>
 endsnippet
 
 snippet popup-simple "Eadv - A simple popup" b
@@ -30,4 +49,168 @@ snippet slide-content-map "Eadv - Slide content with map" b
     <!-- Fin zones de navigation au tap -->
   </map>
 <!-- Fin Contenu principal et sa map-->
+endsnippet
+
+snippet element-btn-btn "Bariagame - bouton type button" b
+<?php echo \$this->element('btn', array(
+  'type'      => 'button',
+  'label'     => "$1",
+  'baseClass' => 'btn$2',
+  'color'     => '$3',
+  'animation' => '$4'
+)) ?>
+endsnippet
+
+snippet element-btn-a "Bariagame - bouton type lien" b
+<?php echo \$this->element('btn', array(
+  'type'      => 'link',
+  'label'     => "$1",
+  'baseClass' => 'btn$2',
+  'color'     => '$3',
+  'href'      => Router::url(array(
+    "controller" => "$4", 
+    "action"     => "$5"
+  )),
+  'animation' => '$6'
+)) ?>
+endsnippet
+
+snippet htcomment "Html - sectioning comment" b
+<!-- Begin : $1 -->
+
+<!-- End : $1 -->
+endsnippet
+
+snippet requiredFields "" b
+<?php echo $requiredFields ?>
+endsnippet
+
+snippet cakesort "Cakephp sort header" b
+  <th><?php echo \$this->Paginator->sort('$1',"<span>$3</span>",array('escape' => false));?></th>
+endsnippet
+
+snippet cakepagination "Cake pagination" b
+<p><small>
+  <?php
+    echo \$this->Paginator->counter(array(
+    'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+    ));
+  ?>
+</small></p>
+
+<ul class="pagination">
+  <?php
+    echo \$this->Paginator->prev('< ' . __('Previous'), array('tag' => 'li'), null, array('class' => 'disabled', 'tag' => 'li', 'disabledTag' => 'a'));
+    echo \$this->Paginator->numbers(array('separator' => '', 'currentTag' => 'a', 'tag' => 'li', 'currentClass' => 'disabled'));
+    echo \$this->Paginator->next(__('Next') . ' >', array('tag' => 'li'), null, array('class' => 'disabled', 'tag' => 'li', 'disabledTag' => 'a'));
+  ?>
+</ul>
+endsnippet
+
+snippet unsetifset "Unset if is set" b
+if (isset(\$$1)) {
+  unset(\$$1);
+}
+endsnippet
+
+snippet echoifset "Echo if is set" b
+echo isset(\$$1) ? \$$1 : $2;
+endsnippet
+
+snippet affectifset "Affect var if other var is set" b
+\$$1 = isset(\$$2) ? \$$2 : $3;
+endsnippet
+
+snippet dump "Dumps var value" b
+echo '<pre>';
+var_dump($1);
+echo '</pre>';
+endsnippet
+
+snippet extr "extract value from array" b
+\$$1 = \$$2['$1'];
+endsnippet
+
+snippet foreach: "foreach in mixed html php file" b
+<?php foreach ($1 as $2) : ?>
+  $3
+<?php endforeach ?>
+endsnippet
+
+snippet tmp-header "temporary table header template" b
+<th scope="col">
+  <a href="<?php echo $sortUrls['$1']['url'] ?>">
+    <img 
+      src="<?php echo $sortUrls['$1']['image']->src ?>" 
+      alt="<?php echo $sortUrls['$1']['image']->alt ?>">&nbsp;$2
+  </a>
+</th>
+endsnippet
+
+snippet form-group "form group à la Boostrap 3" b
+<div class="form-group">
+  <label class="col-lg-2 col-md-2 col-sm-2 col-xs-2" for="$1">$2</label>
+  <div class="col-lg-10 col-md-4 col-sm-10 col-xs-10">
+    <input type="text" class="form-control" name="data[$3][$1]" id="$1" <?php if (!empty($this->data['$3']['$1'])) { echo "value=\"{$this->data['$3']['$1']}\""; } ?> placeholder="Veuillez saisir votre $2">
+  </div>
+  <?php if (!empty(\$this->validationErrors['$3']['$1'])) : ?>
+  <p class="text-danger form-error"><?php echo \$this->validationErrors['$3']['$1'][0] ?></p>
+  <?php endif ?>
+</div>
+endsnippet
+
+snippet notEmpty "cake validation not empty rule" b
+'$1' => array(
+  'notEmpty' => array(
+    'rule'    => 'notEmpty',
+    'message' => "Vous devez saisir un $2.",
+    'last'    => true
+  )
+),
+endsnippet
+
+snippet beforeRender "Cake built-in callback" b
+/**
+ * beforeRender
+ *
+ * Callback intégré de CakePHP utilisé pour 
+ *
+ * - $1
+ *
+ * @see http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks
+ *
+ * @return void
+ */
+public function beforeRender()
+{
+
+}
+endsnippet
+
+snippet customFind "Cake custom finder" b
+ /**
+   * _find$1
+   *
+   * Finder custom pour $2
+   *
+   * @param String \$state   'before' | 'after' Avant ou après la requête
+   * @param Array  \$query   Tableau d'option passé lors de l'appel à find
+   * @param Array  \$results Tableau de résultats passé à la phase 'after'
+   *
+   * @see http://book.cakephp.org/2.0/en/models/retrieving-your-data.html#creating-custom-find-types
+   *
+   * @return Array Liste de résultats
+   **/
+  protected function _find$1(\$state, \$query, \$results = array())
+  {
+    if (\$state === 'before') {
+      if (!empty(\$query['operation']) && \$query['operation'] === 'count') {
+        return \$query;
+      }
+      
+      return \$query;
+    }
+
+    return \$results;
+  }
 endsnippet

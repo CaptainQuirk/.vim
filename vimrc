@@ -72,6 +72,9 @@ if has("autocmd")
 endif
 
 "syntax on
+
+set history=10000
+
 " INTERACTIONS "
 """"""""""""""""
 
@@ -256,7 +259,7 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 " Zencoding                          "
 """"""""""""""""""""""""""""""""""""""
 
-let g:user_zen_leader_key = '<C-i>'
+"let g:user_zen_leader_key = '<C-i>'
 
 """"""""""""""""""""""""""""""""""""""
 " Vim rooter                         "
