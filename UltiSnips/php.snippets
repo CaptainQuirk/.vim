@@ -5,6 +5,14 @@ print_r($$1);
 echo '</pre>';
 endsnippet
 
+snippet echonl "PHP - simple debug function" b
+echo __LINE__ . " $1 : \n";
+echo "\n";
+print_r($$1);
+echo "\n";
+endsnippet
+
+
 snippet echopredie "PHP - simple debug function that dies" b
 echo __LINE__ . " <b>$1</b> : <br />";
 echo '<pre>';
