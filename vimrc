@@ -261,8 +261,17 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 
 "let g:user_zen_leader_key = '<C-i>'
 
+
 """"""""""""""""""""""""""""""""""""""
 " Vim rooter                         "
 """"""""""""""""""""""""""""""""""""""
 
 let g:rooter_change_directory_for_non_project_files = 1
+
+
+""""""""""""""""""""""""""""""""""""""
+" Gf-ext                             "
+""""""""""""""""""""""""""""""""""""""
+
+
+call gf_ext#add_handler('\.pdf$', "!evince")
