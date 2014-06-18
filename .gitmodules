@@ -47,3 +47,6 @@
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "bundle/gf-ext"]
+	path = bundle/gf-ext
+	url = https://github.com/dpwright/vim-gf-ext.git
