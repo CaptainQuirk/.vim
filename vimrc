@@ -38,7 +38,13 @@ echom ">^.^<"
 
 let g:solarized_termcolors=256
 set t_Co=256
-set background=dark
+
+if has("gui_running")
+  set background=light
+else
+  set background=dark
+endif
+
 colorscheme solarized
 
 
@@ -257,10 +263,10 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 
 
 """"""""""""""""""""""""""""""""""""""
-" Zencoding                          "
+" Emmet                              "
 """"""""""""""""""""""""""""""""""""""
 
-"let g:user_zen_leader_key = '<C-i>'
+let g:user_emmet_leader_key = '<C-i>'
 
 
 """"""""""""""""""""""""""""""""""""""
