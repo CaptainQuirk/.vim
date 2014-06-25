@@ -62,6 +62,13 @@ filetype plugin indent on
 "Automatically reload .vimrc if it changes
 autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
 
+" → Reload vimrc
+nmap <leader>m :source $MYVIMRC<cr>
+
+" → Open vimrc
+nmap <leader>ev :e $MYVIMRC<cr>
+
+
 au BufNewFile,BufRead *.ctp set filetype=php.html
 
 " Some file types should wrap their text
@@ -156,7 +163,7 @@ set colorcolumn=80
 " rather than a block
 if has("autocmd")
   au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
   au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
 endif
 " ENCODING "
