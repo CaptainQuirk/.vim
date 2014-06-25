@@ -5,7 +5,6 @@ silent! call pathogen#helptags()
 " Friendly kitty welcome
 echom ">^.^<"
 
-
 """""""""""""""""""""""""""""""
 " SOLARIZED                   "
 """""""""""""""""""""""""""""""
@@ -45,6 +44,7 @@ else
   set background=dark
 endif
 
+syntax on
 colorscheme solarized
 
 
@@ -78,7 +78,6 @@ if has("autocmd")
   "autocmd FileType markdown call s:setupWrapping()
 endif
 
-"syntax on
 
 set history=10000
 
@@ -96,6 +95,13 @@ let mapleader = ","
 set backspace=indent,eol,start
 " → Using the escape key to go out of insert mode is tedious
 imap kj <ESC>
+
+" → Scroll sideways
+set sidescroll=1
+
+" → Reload files changed outside vim
+set autoread
+
 
 
 " FILE HANDLING "
@@ -137,9 +143,25 @@ set ruler
 " No wrapping
 set nowrap
 
+" Always show tabline
+set showtabline=2
 
+" Higlight current line
+set cursorline
+
+" Mark the 80 column
+set colorcolumn=80
+
+" → Disabling cursor blink and turning it to a beam
+" rather than a block
+if has("autocmd")
+  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+  au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+endif
 " ENCODING "
 """"""""""""
+
 set encoding=utf-8
 set fileencoding=utf-8
 
@@ -149,6 +171,7 @@ set fileencoding=utf-8
 
 " → Indenting automatically
 set autoindent
+
 " → Transform tab key press to space
 set expandtab
 
