@@ -2,7 +2,8 @@ silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
 
-
+" Friendly kitty welcome
+echom ">^.^<"
 
 
 """""""""""""""""""""""""""""""
