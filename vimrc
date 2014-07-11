@@ -78,6 +78,7 @@ nmap <leader>et :e ~/.vim/todos.md<cr>
 
 " → Css autocomplete
 autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255 
+autocmd FileType ctp set iskeyword=@,48-57,_,-,?,!,192-255 
 
 au BufNewFile,BufRead *.ctp set filetype=php.html
 
@@ -94,7 +95,6 @@ if has("autocmd")
   autocmd BufRead,BufNewFile *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.txt set ft=markdown
   "autocmd FileType markdown call s:setupWrapping()
 endif
-
 
 set history=10000
 
@@ -273,6 +273,9 @@ nnoremap <leader>pb :CtrlPMRU<CR>
 
 " → Searching in tags
 nnoremap <leader>pt :CtrlPBufTag<CR>
+
+" → 100 results
+let g:ctrlp_match_window = 'results:100'
 
 """"""""""""""""""""""""""""""""""""""
 " W3m                                "
