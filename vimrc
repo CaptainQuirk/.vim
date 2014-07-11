@@ -68,6 +68,9 @@ nmap <leader>m :source $MYVIMRC<cr>
 " → Open vimrc
 nmap <leader>ev :e $MYVIMRC<cr>
 
+" → Open my todo list
+nmap <leader>et :e ~/.vim/todos.md<cr>
+
 
 """"""""""""""""""""""
 " File type settings "
