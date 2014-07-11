@@ -69,6 +69,13 @@ nmap <leader>m :source $MYVIMRC<cr>
 nmap <leader>ev :e $MYVIMRC<cr>
 
 
+""""""""""""""""""""""
+" File type settings "
+""""""""""""""""""""""
+
+" → Css autocomplete
+autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255 
+
 au BufNewFile,BufRead *.ctp set filetype=php.html
 
 " Some file types should wrap their text
