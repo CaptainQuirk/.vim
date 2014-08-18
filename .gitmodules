@@ -25,9 +25,6 @@
 [submodule "bundle/nerdtreetabs"]
 	path = bundle/nerdtreetabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/w3m"]
-	path = bundle/w3m
-	url = https://github.com/yuratomo/w3m.vim.git
 [submodule "bundle/vim-easytags"]
 	path = bundle/vim-easytags
 	url = https://github.com/xolox/vim-easytags.git
