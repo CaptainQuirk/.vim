@@ -36,6 +36,7 @@ echom ">^.^<"
 
 
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 set t_Co=256
 
 if has("gui_running")
@@ -62,18 +63,12 @@ filetype plugin indent on
 "Automatically reload .vimrc if it changes
 autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
 
-" → Reload vimrc
-nmap <leader>m :source $MYVIMRC<cr>
+""""""""
+" Help "
+""""""""
 
-" → Open vimrc
-nmap <leader>ev :e $MYVIMRC<cr>
-
-" → Open my todo list
-nmap <leader>et :e ~/.vim/todos.md<cr>
-
-" → Open my practice list
-nmap <leader>ep :e ~/.vim/practice.md<cr>
-
+" jump to links with CR
+noremap <buffer> <CR> <C-]>
 
 """"""""""""""""""""""
 " File type settings "
@@ -106,6 +101,20 @@ set history=10000
 
 " → leader is set to comma, faster to find
 let mapleader = ","
+
+
+" → reload vimrc
+nmap <leader>m :source $MYVIMRC<cr>
+
+" → Open vimrc
+nmap <leader>ev :e $MYVIMRC<cr>
+
+" → Open my todo list
+nmap <leader>et :e ~/.vim/todos.md<cr>
+
+" → Open my practice list
+nmap <leader>ep :e ~/.vim/practice.md<cr>
+
 
 
 " BEHAVIOR "
