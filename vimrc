@@ -158,7 +158,8 @@ set incsearch
 " to toggle the hightlighting when finished
 set hlsearch
 nnoremap <leader>f :set hlsearch! hlsearch?<CR>
-
+nmap n nzz
+nmap N Nzz
 
 " INTERFACE "
 """""""""""""
