@@ -345,4 +345,8 @@ let g:rooter_change_directory_for_non_project_files = 1
 """"""""""""""""""""""""""""""""""""""
 
 
-call gf_ext#add_handler('\.pdf$', "!evince")
+if has("autocmd") && (match(system('uname -s'), 'Darwin') < 0)
+  call gf_ext#add_handler('\.pdf$', "!evince")
+else
+
+endif
