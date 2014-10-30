@@ -131,6 +131,9 @@ set sidescroll=1
 " → Reload files changed outside vim
 set autoread
 
+" → Display extra white space
+highlight ExtraWhitespace ctermbg=darkred
+
 
 
 " FILE HANDLING "
@@ -297,8 +300,9 @@ nnoremap <leader>pt :CtrlPBufTag<CR>
 
 " → 100 results
 let g:ctrlp_match_window = 'results:100'
+let g:ctrlp_custom_ignore = '\v[\/](build|Resources|node_modules)$'
 
-""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""E"
 " W3m                                "
 """"""""""""""""""""""""""""""""""""""
 
