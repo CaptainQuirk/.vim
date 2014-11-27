@@ -1,6 +1,11 @@
 TODOS
 =====
 
+# Filetypes
+
+* Activate syntax highlighting for json files
+* Map tss files to json type
+
 # General
 
 * Split vimrc in multiple files, placed in plugin directory
