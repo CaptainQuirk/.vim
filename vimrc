@@ -68,7 +68,17 @@ autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
 """"""""
 
 " jump to links with CR
-noremap <buffer> <CR> <C-]>
+"noremap <buffer> <CR> <C-]>
+
+"""""""""""""""""
+" Moving around "
+"""""""""""""""""
+
+" Move by display line, not real line
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
 
 """"""""""""""""""""""
 " File type settings "
