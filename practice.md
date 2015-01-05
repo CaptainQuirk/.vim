@@ -9,4 +9,4 @@ Things to practice
 * zz - Center screen on current line while preserving the column
 
 * Use :Linediff
-* Paste from file to command mode
+* Paste from file to command mode <C-R><C-O>
