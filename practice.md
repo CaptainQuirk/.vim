@@ -7,3 +7,6 @@ Things to practice
 * ge to jump backwards to end of previous word
 * Make jumps and move in history with g, and g;
 * zz - Center screen on current line while preserving the column
+
+* Use :Linediff
+* Paste from file to command mode
