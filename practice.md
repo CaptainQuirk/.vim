@@ -10,3 +10,6 @@ Things to practice
 
 * Use :Linediff
 * Paste from file to command mode <C-R><C-O>
+
+* vim-surroung
+  - Change " into ' with cs"'
