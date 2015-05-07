@@ -274,6 +274,9 @@ let NERDChristmasTree=1
 "   in another tab
 nnoremap <leader>n :NERDTreeToggle<CR> :NERDTreeMirror<CR>
 
+" → Find current file in tree
+nnoremap <leader>m :NERDTreeFind<CR>
+
 
 """"""""""""""""""""""""""""""""""""""
 " Fugitive                           "
