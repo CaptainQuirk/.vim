@@ -9,7 +9,7 @@ Things to practice
 * zz - Center screen on current line while preserving the column
 
 * Use :Linediff
-* Paste from file to command mode <C-R><C-O>
+* Paste from file to command mode <C-R><C-\">
 
 * gv to reselect visual selection
 
