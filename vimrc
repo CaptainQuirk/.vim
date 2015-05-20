@@ -53,6 +53,12 @@ set modifiable
 
 set updatetime=750
 
+" List chars
+set list
+set listchars=""
+set listchars+=trail:·
+set listchars+=tab:→\ 
+highlight SpecialKey ctermbg=red guibg=red
 
 set et!
 
