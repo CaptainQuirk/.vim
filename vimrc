@@ -92,8 +92,8 @@ noremap  <buffer> <silent> $ g$
 """"""""""""""""""""""
 
 " → Css autocomplete
-autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255 
-autocmd FileType ctp set iskeyword=@,48-57,_,-,?,!,192-255 
+autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
+autocmd FileType ctp set iskeyword=@,48-57,_,-,?,!,192-255
 
 au BufNewFile,BufRead *.ctp set filetype=php.html
 
@@ -269,7 +269,7 @@ nnoremap <leader>a :Ack<space>
 
 " → Opening NERDTree from the start, even with no
 " file opened in vim, while not getting focus
-autocmd VimEnter * exe 'NERDTree' | wincmd l 
+autocmd VimEnter * exe 'NERDTree' | wincmd l
 
 " → Shows hidden files and folders by default
 let NERDTreeShowHidden=1
