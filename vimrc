@@ -50,7 +50,7 @@ colorscheme solarized
 
 
 set modifiable
-
+set laststatus=2
 set updatetime=750
 
 " List chars
@@ -397,3 +397,11 @@ let g:gitgutter_realtime = 1
 
 nnoremap <leader>> :GitGutterNextHunk<CR>
 nnoremap <leader>< :GitGutterPrevHunk<CR>
+
+
+"""""""""""
+" Airline "
+"""""""""""
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
