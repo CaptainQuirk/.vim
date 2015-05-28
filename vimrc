@@ -51,6 +51,8 @@ colorscheme solarized
 
 set modifiable
 set laststatus=2
+set showtabline=2
+set noshowmode
 set updatetime=750
 
 " List chars
