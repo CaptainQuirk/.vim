@@ -328,7 +328,9 @@ if (match(system('uname -s'), 'Darwin') >= 0)
   let g:ctrlp_buftag_ctags_bin = '/usr/local/bin/ctags'
 endif
 
-""""""""""""""""""""""""""""""""""""""E"
+let g:ctrlp_mruf_relative = 1
+
+""""""""""""""""""""""""""""""""""""""e"
 " W3m                                "
 """"""""""""""""""""""""""""""""""""""
 
