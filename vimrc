@@ -362,7 +362,7 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 " Emmet                              "
 """"""""""""""""""""""""""""""""""""""
 
-let g:user_emmet_leader_key = '<C-i>'
+let g:user_emmet_leader_key = '<C-y>'
 
 
 """"""""""""""""""""""""""""""""""""""
