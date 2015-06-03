@@ -409,3 +409,15 @@ nnoremap <leader>< :GitGutterPrevHunk<CR>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+
+""""""""""""""
+" Unimpaired "
+""""""""""""""
+
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
