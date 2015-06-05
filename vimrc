@@ -415,9 +415,9 @@ let g:airline_powerline_fonts = 1
 " Unimpaired "
 """"""""""""""
 
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
+nmap ( [
+nmap ) ]
+omap ( [
+omap ) ]
+xmap ( [
+xmap ) ]
