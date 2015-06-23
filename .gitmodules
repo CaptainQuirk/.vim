@@ -50,9 +50,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-signature"]
-	path = bundle/vim-signature
-	url = https://github.com/kshenoy/vim-signature.git
 [submodule "bundle/linediff.vim"]
 	path = bundle/linediff.vim
 	url = https://github.com/AndrewRadev/linediff.vim.git
