@@ -68,3 +68,6 @@
 [submodule "bundle/phpcomplete.vim"]
 	path = bundle/phpcomplete.vim
 	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/vim-bookmarks"]
+	path = bundle/vim-bookmarks
+	url = https://github.com/MattesGroeger/vim-bookmarks.git
