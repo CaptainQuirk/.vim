@@ -32,8 +32,8 @@ echom ">^.^<"
   "colorscheme solarized
 "endif
 
-
-
+source ~/.vim/mappings.vim
+source ~/.vim/functions.vim
 
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
