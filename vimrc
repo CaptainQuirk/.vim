@@ -447,3 +447,15 @@ nmap <Leader>mj <Plug>BookmarkNext
 nmap <Leader>mk <Plug>BookmarkPrev
 nmap <Leader>mc <Plug>BookmarkClear
 nmap <Leader>mx <Plug>BookmarkClearAll
+
+
+"""""""""""
+" Tabular "
+"""""""""""
+
+if exists (":Tabularize")
+  nmap <Leader>t= :Tabularize /=<CR>
+  vmap <Leader>t= :Tabularize /=<CR>
+  nmap <Leader>t: :Tabularize /:\zs<CR>
+  vmap <Leader>t: :Tabularize /:\zs<CR>
+endif
