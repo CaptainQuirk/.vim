@@ -51,6 +51,8 @@ colorscheme solarized
 
 set modifiable
 set laststatus=2
+set showtabline=2
+set noshowmode
 set updatetime=750
 
 " List chars
@@ -326,7 +328,9 @@ if (match(system('uname -s'), 'Darwin') >= 0)
   let g:ctrlp_buftag_ctags_bin = '/usr/local/bin/ctags'
 endif
 
-""""""""""""""""""""""""""""""""""""""E"
+let g:ctrlp_mruf_relative = 1
+
+""""""""""""""""""""""""""""""""""""""e"
 " W3m                                "
 """"""""""""""""""""""""""""""""""""""
 
@@ -358,7 +362,7 @@ let g:ctrlp_buftag_types = {'css':'--language-force=css --css-types=citm','javas
 " Emmet                              "
 """"""""""""""""""""""""""""""""""""""
 
-let g:user_emmet_leader_key = '<C-i>'
+let g:user_emmet_leader_key = '<C-y>'
 
 
 """"""""""""""""""""""""""""""""""""""
@@ -405,3 +409,41 @@ nnoremap <leader>< :GitGutterPrevHunk<CR>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+
+""""""""""""""
+" Unimpaired "
+""""""""""""""
+
+nmap ( [
+nmap ) ]
+omap ( [
+omap ) ]
+xmap ( [
+xmap ) ]
+
+
+""""""""""""
+" Supertab "
+""""""""""""
+
+let g:SuperTabLongestEnchanced = 1
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabDefaultCompletionType = "context"
+
+
+"""""""""""""""""
+" vim-bookmarks "
+"""""""""""""""""
+
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_manage_per_buffer = 1
+let g:bookmark_auto_close = 1
+let g:bookmark_auto_save = 1
+
+nmap <Leader>mi <Plug>BookmarkAnnotate
+nmap <Leader>ma <Plug>BookmarkShowAll
+nmap <Leader>mj <Plug>BookmarkNext
+nmap <Leader>mk <Plug>BookmarkPrev
+nmap <Leader>mc <Plug>BookmarkClear
+nmap <Leader>mx <Plug>BookmarkClearAll
