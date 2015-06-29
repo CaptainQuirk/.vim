@@ -1,4 +1,4 @@
-nnoremap <silent> <Leader>c :call Clean()<CR>
+
 
 """""""""""""""""
 " Moving around "
