@@ -62,7 +62,7 @@ directory. I rely here on a built-in vim feature here, that loads every
 
 When adding a functionnality to vim through a function, I'm relying on pathogen
 to load the function and any mapping using it in a general __custom__ plugin
-directory(thanks [https://github.com/romainl/dotvim/tree/master/bundle/custom](romainl)
-for the direct inspiration) that I may end up splitting into multiple
+directory - thanks [romainl](https://github.com/romainl/dotvim/tree/master/bundle/custom)
+for the direct inspiration - that I may end up splitting into multiple
 directories if I find it relevant in the future.
 
