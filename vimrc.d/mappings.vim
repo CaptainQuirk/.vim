@@ -21,7 +21,15 @@ nnoremap  <buffer> <silent> k gk
 nnoremap  <buffer> <silent> j gj
 nnoremap  <buffer> <silent> 0 g0
 nnoremap  <buffer> <silent> $ g$
+
+"→ Going out of insert mode
 imap kj <ESC>
+
+" → Going out of insert mode and saving
+imap kjw <ESC>:w<CR>
+
+" → Going out of insert mode, saving and quitting
+imap kjwq <ESC>:wq<CR>
 
 nnoremap <leader>f :set hlsearch! hlsearch?<CR>
 nmap n nzz
