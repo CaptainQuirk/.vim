@@ -1,3 +1,8 @@
+""""""""""""""""""
+" CLEANING FILES "
+""""""""""""""""""
+
+" Remove trailing whitespaces
 function! StripTrailingWhitespaces()
   let _s=@/
   let l = line(".")
@@ -7,16 +12,10 @@ function! StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
+" Remove trailing whitespaces and retab according
+" to the current buffer's way
 function! Clean()
   call StripTrailingWhitespaces()
   retab
 endfunction
-
-" Some file types should wrap their text
-function! s:setupWrapping()
-  set wrap
-  set linebreak
-  set textwidth=72
-  set nolist
-endfunction
-
+nnoremap <silent> <Leader>c :call Clean()<CR>
