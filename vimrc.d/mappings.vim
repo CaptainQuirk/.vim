@@ -1,10 +1,14 @@
+""""""""""
+" RELOAD "
+""""""""""
 
 " → reload vimrc
 nmap <leader>m :call custom#Reload()<cr>
 
 
-" → reload vimrc
-nmap <leader>m :source $MYVIMRC<cr>
+""""""""""""""
+" QUICK OPEN "
+""""""""""""""
 
 " → Open vimrc
 nmap <leader>ev :tabe $MYVIMRC<cr>
@@ -15,11 +19,21 @@ nmap <leader>et :tabe ~/.vim/todos.md<cr>
 " → Open my practice list
 nmap <leader>ep :tabe ~/.vim/practice.md<cr>
 
+
+"""""""""""""""""
+" MOVING AROUND "
+"""""""""""""""""
+
 " Move by display line, not real line
 nnoremap  <buffer> <silent> k gk
 nnoremap  <buffer> <silent> j gj
 nnoremap  <buffer> <silent> 0 g0
 nnoremap  <buffer> <silent> $ g$
+
+
+"""""""""""""""
+" INSERT MODE "
+"""""""""""""""
 
 "→ Going out of insert mode
 imap kj <ESC>
@@ -30,11 +44,17 @@ imap kjw <ESC>:w<CR>
 " → Going out of insert mode, saving and quitting
 imap kjwq <ESC>:wq<CR>
 
+
+"""""""""""""""
+" SEARCHING   "
+"""""""""""""""
+
 nnoremap <leader>f :set hlsearch! hlsearch?<CR>
 nmap n nzz
 nmap N Nzz
 
 
+"""""""""""""
 " UTILITIES "
 """""""""""""
 
