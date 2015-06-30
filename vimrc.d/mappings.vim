@@ -16,7 +16,11 @@ nmap <leader>et :e ~/.vim/todos.md<cr>
 " → Open my practice list
 nmap <leader>ep :e ~/.vim/practice.md<cr>
 
-" → Using the escape key to go out of insert mode is tedious
+" Move by display line, not real line
+nnoremap  <buffer> <silent> k gk
+nnoremap  <buffer> <silent> j gj
+nnoremap  <buffer> <silent> 0 g0
+nnoremap  <buffer> <silent> $ g$
 imap kj <ESC>
 
 nnoremap <leader>f :set hlsearch! hlsearch?<CR>
@@ -34,10 +38,3 @@ nmap <leader>l mQviwu`Q
 " upper/lower first char of word
 nmap <leader>U mQgewvU`Q
 nmap <leader>L mQgewvu`Q
-
-" Move by display line, not real line
-nnoremap  <buffer> <silent> k gk
-nnoremap  <buffer> <silent> j gj
-nnoremap  <buffer> <silent> 0 g0
-nnoremap  <buffer> <silent> $ g$
-
