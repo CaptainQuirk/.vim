@@ -49,8 +49,13 @@ imap kjwq <ESC>:wq<CR>
 " SEARCHING   "
 """""""""""""""
 
+" → Toggling search highlighting (hlsearch)
 nnoremap <leader>f :set hlsearch! hlsearch?<CR>
+
+" → When moving to the next search result, center it vertically
 nmap n nzz
+
+" → When moving to the previous search result, center it vertically
 nmap N Nzz
 
 
