@@ -8,13 +8,13 @@
 nmap <leader>m :source $MYVIMRC<cr>
 
 " → Open vimrc
-nmap <leader>ev :vsplit $MYVIMRC<cr>
+nmap <leader>ev :tabe $MYVIMRC<cr>
 
 " → Open my todo list
-nmap <leader>et :e ~/.vim/todos.md<cr>
+nmap <leader>et :tabe ~/.vim/todos.md<cr>
 
 " → Open my practice list
-nmap <leader>ep :e ~/.vim/practice.md<cr>
+nmap <leader>ep :tabe ~/.vim/practice.md<cr>
 
 " Move by display line, not real line
 nnoremap  <buffer> <silent> k gk
