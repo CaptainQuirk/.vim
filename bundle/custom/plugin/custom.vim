@@ -1,3 +1,16 @@
+"""""""""""""
+" RELOADING "
+"""""""""""""
+
+function! Reload()
+  source ~/.vim/vimrc.d/colorscheme.vim
+  source ~/.vim/vimrc.d/settings.vim
+  source ~/.vim/vimrc.d/interface.vim
+  source ~/.vim/vimrc.d/autocommands.vim
+  source ~/.vim/vimrc.d/mappings.vim
+endfunction
+
+
 """"""""""""""""""
 " CLEANING FILES "
 """"""""""""""""""

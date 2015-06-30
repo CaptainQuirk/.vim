@@ -1,8 +1,7 @@
 
+" → reload vimrc
+nmap <leader>m :call custom#Reload()<cr>
 
-"""""""""""""""""
-" Moving around "
-"""""""""""""""""
 
 " → reload vimrc
 nmap <leader>m :source $MYVIMRC<cr>
