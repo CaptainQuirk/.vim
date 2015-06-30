@@ -4,7 +4,9 @@
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
-" Sourcing all files in local vimrc.d directory
-for file in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
-  exe 'source' file
-endfor
+" Loading configuration files in proper order
+source ~/.vim/vimrc.d/colorscheme.vim
+source ~/.vim/vimrc.d/settings.vim
+source ~/.vim/vimrc.d/interface.vim
+source ~/.vim/vimrc.d/autocommands.vim
+source ~/.vim/vimrc.d/mappings.vim
