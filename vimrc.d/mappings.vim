@@ -3,7 +3,7 @@
 """"""""""
 
 " → reload vimrc
-nmap <leader>m :call custom#Reload()<cr>
+nmap <leader>vr :call custom#Reload()<cr>
 
 
 """"""""""""""
