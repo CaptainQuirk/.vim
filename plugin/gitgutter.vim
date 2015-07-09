@@ -26,6 +26,8 @@ let g:gitgutter_sign_modified_removed   = '●'
 let g:gitgutter_eager    = 1
 let g:gitgutter_realtime = 1
 
+" Setting maximum number of signs displayed
+let g:gitgutter_max_signs = 1000
 
 """"""""""""""""
 " MAPPINGS     "
