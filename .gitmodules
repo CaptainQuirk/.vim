@@ -89,3 +89,6 @@
 [submodule "bundle/vim-livedown"]
 	path = bundle/vim-livedown
 	url = https://github.com/shime/vim-livedown.git
+[submodule "bundle/vim-rest-console"]
+	path = bundle/vim-rest-console
+	url = https://github.com/diepm/vim-rest-console.git
