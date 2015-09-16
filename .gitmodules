@@ -98,3 +98,6 @@
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-cycle"]
+	path = bundle/vim-cycle
+	url = https://github.com/zef/vim-cycle.git
