@@ -24,6 +24,11 @@ filetype plugin indent on
 
 set history=10000
 
+set wildmenu
+set switchbuf=useopen,usetab
+set splitright
+
+set completeopt+=longest
 
 " BEHAVIOR "
 """"""""""""
@@ -33,6 +38,8 @@ set backspace=indent,eol,start
 
 " → Scroll sideways
 set sidescroll=1
+
+set scrolloff=4
 
 " → Reload files changed outside vim
 set autoread
@@ -86,6 +93,14 @@ set cursorline
 set colorcolumn=80
 
 
+" FOLDING "
+"""""""""""
+
+set foldlevelstart=999
+set foldmethod=manual
+set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
+
+
 " ENCODING "
 """"""""""""
 
@@ -115,5 +130,13 @@ set shiftround
 set smarttab
 
 
+set t_vb=
+set visualbell
 
+set fileformats=unix,mac,dos
+
+set mouse=a
+set nostartofline
+
+set virtualedit=block
 
