@@ -11,4 +11,4 @@ autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
 autocmd FileType ctp set iskeyword=@,48-57,_,-,?,!,192-255
 
 " → Cakephp files are treated as php files
-autocmd BufRead,BufNewFile *.ctp set filetype=php.html
+autocmd BufRead,BufNewFile *.ctp set filetype=php
