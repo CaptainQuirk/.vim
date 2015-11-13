@@ -45,6 +45,14 @@ imap kjw <ESC>:w<CR>
 imap kjwq <ESC>:wq<CR>
 
 
+""""""""""""""""
+" COMMAND MODE "
+""""""""""""""""
+
+cnoremap <C-j> <down>
+cnoremap <C-k> <up>
+
+
 """""""""""""""
 " SEARCHING   "
 """""""""""""""
