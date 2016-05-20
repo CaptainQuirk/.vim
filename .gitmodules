@@ -122,3 +122,6 @@
 [submodule "bundle/vim-textobj-pastedtext"]
 	path = bundle/vim-textobj-pastedtext
 	url = https://github.com/saaguero/vim-textobj-pastedtext.git
+[submodule "bundle/vim-textobj-variable-segment"]
+	path = bundle/vim-textobj-variable-segment
+	url = https://github.com/Julian/vim-textobj-variable-segment.git
