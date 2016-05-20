@@ -116,3 +116,6 @@
 [submodule "bundle/vim-textobj-brace"]
 	path = bundle/vim-textobj-brace
 	url = https://github.com/Julian/vim-textobj-brace.git
+[submodule "bundle/vim-textobj-parameter"]
+	path = bundle/vim-textobj-parameter
+	url = https://github.com/sgur/vim-textobj-parameter.git
