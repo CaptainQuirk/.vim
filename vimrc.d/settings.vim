@@ -139,3 +139,4 @@ set nostartofline
 
 set virtualedit=block
 
+set clipboard=unnamed

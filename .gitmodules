@@ -122,3 +122,12 @@
 [submodule "bundle/vim-textobj-variable-segment"]
 	path = bundle/vim-textobj-variable-segment
 	url = https://github.com/Julian/vim-textobj-variable-segment.git
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist.git
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "bundle/splitjoin.vim"]
+	path = bundle/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim.git
