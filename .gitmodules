@@ -119,3 +119,6 @@
 [submodule "bundle/gv.vim"]
 	path = bundle/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
+[submodule "bundle/vim-bats"]
+	path = bundle/vim-bats
+	url = https://github.com/markcornick/vim-bats.git
