@@ -8,6 +8,9 @@ nnoremap <leader>pb :CtrlPMRU<CR>
 " → Searching in tags
 nnoremap <leader>pt :CtrlPBufTag<CR>
 
+" → Searching in cmds
+nnoremap <leader>pc :CtrlPCmdPalette<CR>
+
 " → 100 results
 let g:ctrlp_match_window = 'results:100'
 let g:ctrlp_custom_ignore = '\v[\/](build|Resources|node_modules)$'
@@ -18,3 +21,4 @@ endif
 
 let g:ctrlp_mruf_relative = 1
 
+let g:ctrlp_extensions = [ 'cmd-palette' ]
