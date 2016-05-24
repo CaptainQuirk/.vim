@@ -25,10 +25,6 @@
 [submodule "bundle/nerdtreetabs"]
 	path = bundle/nerdtreetabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/vim-easytags"]
-	path = bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags.git
-  ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
