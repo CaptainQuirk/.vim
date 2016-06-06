@@ -142,3 +142,6 @@
 [submodule "bundle/vim-bats"]
 	path = bundle/vim-bats
 	url = https://github.com/markcornick/vim-bats.git
+[submodule "bundle/vim-vagrant"]
+	path = bundle/vim-vagrant
+	url = https://github.com/hashivim/vim-vagrant.git
