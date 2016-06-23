@@ -139,4 +139,8 @@ set nostartofline
 
 set virtualedit=block
 
-set clipboard=unnamed
+if (match(system('uname -s'), 'Darwin') < 0)
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+endif
