@@ -7,6 +7,10 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
+" Modeline for specific files
+set modeline
+set modelines=5
+
 " List chars
 set list
 set listchars=""
