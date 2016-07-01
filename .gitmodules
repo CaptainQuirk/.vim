@@ -142,3 +142,6 @@
 [submodule "bundle/vim-bats"]
 	path = bundle/vim-bats
 	url = https://github.com/markcornick/vim-bats.git
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
