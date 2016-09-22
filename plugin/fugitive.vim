@@ -13,3 +13,6 @@ nnoremap <leader>gd :Gdiff<CR>
 " → stage current file
 nnoremap <leader>ga :Gwrite<CR>
 
+" → current file history
+nnoremap <leader>gl :Glog<CR>
+
