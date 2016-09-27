@@ -133,6 +133,11 @@ set shiftround
 set smarttab
 
 
+" PRINT CODE "
+""""""""""""""
+
+set printoptions=portrait:no,header:0,paper:A4
+
 set t_vb=
 set visualbell
 
