@@ -138,6 +138,10 @@ set smarttab
 
 set printoptions=portrait:no,header:0,paper:A4
 
+
+" NOTIFICATIONS "
+"""""""""""""""""
+
 set t_vb=
 set visualbell
 
@@ -147,6 +151,9 @@ set mouse=a
 set nostartofline
 
 set virtualedit=block
+
+" SYSTEM CLIPBOARD "
+""""""""""""""""""""
 
 if (match(system('uname -s'), 'Darwin') < 0)
   set clipboard=unnamedplus
