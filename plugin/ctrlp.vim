@@ -13,7 +13,7 @@ nnoremap <leader>pc :CtrlPCmdPalette<CR>
 
 " → 100 results
 let g:ctrlp_match_window = 'results:100'
-let g:ctrlp_custom_ignore = '\v[\/](build|Resources|node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules)$'
 
 if (match(system('uname -s'), 'Darwin') >= 0)
   let g:ctrlp_buftag_ctags_bin = '/usr/local/bin/ctags'
