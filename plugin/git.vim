@@ -1,3 +1,6 @@
+" Fugitive
+" --------
+
 " → git status
 nnoremap <leader>gs :Gstatus<CR>
 
@@ -16,3 +19,7 @@ nnoremap <leader>ga :Gwrite<CR>
 " → current file history
 nnoremap <leader>gl :Glog<CR>
 
+" GV
+" --
+
+nnoremap <leader>gv :GV<CR>
