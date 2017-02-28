@@ -19,10 +19,10 @@ let g:scratch_filetype = 'markdown'
 " Mappings
 " --------
 
-nmap rs <plug>(scratch-insert-reuse)
-nmap rS <plug>(scratch-insert-clear)
-nmap rp :ScratchPreview <CR>
-xmap rs <plug>(scratch-selection-reuse)
-xmap rS <plug>(scratch-selection-clear)
+nmap <leader>rs <plug>(scratch-insert-reuse)
+nmap <leader>rS <plug>(scratch-insert-clear)
+nmap <leader>rp :ScratchPreview <CR>
+xmap <leader>rs <plug>(scratch-selection-reuse)
+xmap <leader>rS <plug>(scratch-selection-clear)
 
 
