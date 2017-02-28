@@ -16,6 +16,9 @@ let g:scratch_autohide = 1
 " Set markdown as the base filetype
 let g:scratch_filetype = 'markdown'
 
+" Set scrach window height as a third of the current window
+let g:scratch_height = 0.33
+
 " Mappings
 " --------
 
