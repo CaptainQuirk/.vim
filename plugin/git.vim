@@ -19,6 +19,15 @@ nnoremap <leader>ga :Gwrite<CR>
 " → current file history
 nnoremap <leader>gl :Glog<CR>
 
+" -> fetch
+nnoremap <leader>gf :Gfetch<CR>
+
+" -> merge
+nnoremap <leader>gm :Gmerge
+
+" -> push
+nnoremap <leader>gp :Gpush
+
 " GV
 " --
 
