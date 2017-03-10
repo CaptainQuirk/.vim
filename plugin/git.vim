@@ -26,7 +26,10 @@ nnoremap <leader>gf :Gfetch<CR>
 nnoremap <leader>gm :Gmerge
 
 " -> push
-nnoremap <leader>gp :Gpush
+nnoremap <leader>gp :Gpush origin `git rev-parse --abbrev-ref HEAD`
+
+" -> reset last commit
+nnoremap <leader>gr :Git reset HEAD~1<CR>
 
 " GV
 " --
