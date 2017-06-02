@@ -1,1 +1,1 @@
-autocmd VimEnter * call AddCycleGroup(['this', 'that', 'self'])
+autocmd VimEnter * call AddCycleGroup('php', ['this', 'that', 'self'])
