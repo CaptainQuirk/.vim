@@ -10,6 +10,12 @@ function! RevertHunk()
   endif
 endfunction
 
+function! CommitHunk()
+  let message = input('Message : ')
+  call gitgutter#stage_hunk()
+  silent! exec ':Git commit -m "' . message . '"'
+endfunction
+
 
 """""""""""""""
 " SETTINGS    "
@@ -39,3 +45,4 @@ nnoremap <leader>< :GitGutterPrevHunk<CR>
 
 " Remapping revert hunk to ask for confirmation
 nnoremap <leader>hr :call RevertHunk()<CR>
+nnoremap <leader>hc :call CommitHunk()<CR>
