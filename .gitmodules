@@ -157,6 +157,9 @@
 [submodule "bundle/scratch.vim"]
 	path = bundle/scratch.vim
 	url = https://github.com/mtth/scratch.vim.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
 [submodule "bundle/vim-startify"]
 	path = bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
