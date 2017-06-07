@@ -157,3 +157,6 @@
 [submodule "bundle/scratch.vim"]
 	path = bundle/scratch.vim
 	url = https://github.com/mtth/scratch.vim.git
+[submodule "bundle/deleft.vim"]
+	path = bundle/deleft.vim
+	url = https://github.com/AndrewRadev/deleft.vim.git
