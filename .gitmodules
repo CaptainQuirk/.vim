@@ -169,3 +169,4 @@
 [submodule "bundle/deleft.vim"]
 	path = bundle/deleft.vim
 	url = https://github.com/AndrewRadev/deleft.vim.git
+
