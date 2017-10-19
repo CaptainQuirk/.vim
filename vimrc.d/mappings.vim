@@ -51,6 +51,9 @@ imap kjwq <ESC>:wq<CR>
 
 cnoremap <C-j> <down>
 cnoremap <C-k> <up>
+cnoremap <C-A> <Home>
+cnoremap <C-B> <Left>
+cnoremap <C-F> <Right>
 
 
 """""""""""""""
