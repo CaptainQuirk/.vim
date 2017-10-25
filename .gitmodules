@@ -173,3 +173,6 @@
 [submodule "bundle/vim-swap"]
 	path = bundle/vim-swap
 	url = https://github.com/kurkale6ka/vim-swap.git
+[submodule "bundle/phpfolding.vim"]
+	path = bundle/phpfolding.vim
+	url = https://github.com/CaptainQuirk/phpfolding.vim.git
