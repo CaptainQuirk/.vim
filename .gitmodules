@@ -176,3 +176,6 @@
 [submodule "bundle/phpfolding.vim"]
 	path = bundle/phpfolding.vim
 	url = https://github.com/CaptainQuirk/phpfolding.vim.git
+[submodule "bundle/vim-cucumber"]
+	path = bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber.git
