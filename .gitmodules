@@ -170,3 +170,6 @@
 	path = bundle/deleft.vim
 	url = https://github.com/AndrewRadev/deleft.vim.git
 
+[submodule "bundle/vim-swap"]
+	path = bundle/vim-swap
+	url = https://github.com/kurkale6ka/vim-swap.git
