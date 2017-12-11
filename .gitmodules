@@ -179,3 +179,6 @@
 [submodule "bundle/vim-game-code-break.git"]
 	path = bundle/vim-game-code-break.git
 	url = https://github.com/johngrib/vim-game-code-break.git
+[submodule "bundle/ranger.vim"]
+	path = bundle/ranger.vim
+	url = https://github.com/francoiscabrol/ranger.vim.git
