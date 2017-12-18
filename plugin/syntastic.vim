@@ -2,7 +2,7 @@
 " ---------
 
 " Javascript
-let g:syntastic_javascript_checkers = [ 'jscs', 'jshint' ]
+let g:syntastic_javascript_checkers = [ 'jshint', 'jscs' ]
 
 " PHP
 let g:syntastic_php_checkers = [ 'php' ]
