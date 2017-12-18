@@ -13,6 +13,11 @@ let g:syntastic_yaml_checkers = [ 'js-yaml' ]
 " Twig
 let g:syntastic_twig_checkers = [ 'twiglint' ]
 
+" Shutdown eclim
+" I cannot do it in plugin/eclim.vim cause the file was created during
+" eclim installation
+let g:EclimJavascriptValidate = 0
+let g:EclimJavascriptLintEnabled = 0
 
 " Behavior
 " --------
