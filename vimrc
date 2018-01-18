@@ -5,8 +5,8 @@ silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
 
-# colorscheme
-# -----------
+" Colorscheme
+" -----------
 
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
@@ -20,8 +20,8 @@ endif
 colorscheme solarized
 
 
-# settings
-# --------
+" Settings
+" --------
 
 syntax on
 let mapleader = ","
@@ -187,8 +187,8 @@ else
 endif
 
 
-# interface
-# ---------
+" Interface
+" ---------
 
 " → Disabling cursor blink and turning it to a beam
 " rather than a block
@@ -202,8 +202,8 @@ elseif (match(system('uname -s'), 'Darwin') >= 0)
 endif
 
 
-# autocommands
-# ------------
+" Autocommands
+" ------------
 
 " Automatically reload .vimrc if it changes
 autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
@@ -221,8 +221,8 @@ autocmd FileType ctp set iskeyword=@,48-57,_,-,?,!,192-255
 autocmd BufRead,BufNewFile *.ctp set filetype=php
 
 
-# mappings
-# --------
+" Mappings
+" --------
 
 """"""""""
 " RELOAD "
