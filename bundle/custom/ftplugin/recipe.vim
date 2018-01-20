@@ -16,8 +16,8 @@ syntax region recipeString start=/\v"/ end=/\v"/ contains=recipeVar
 
 highlight link recipeKeyword Keyword
 highlight link recipeTest Keyword
-highlight link recipeFunction Macro
+highlight link recipeFunction Structure
 highlight link recipeComment Comment
 highlight link recipeString String
 highlight link recipeBoolean Todo
-highlight link recipeVar Structure
+highlight link recipeVar Macro
