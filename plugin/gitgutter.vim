@@ -32,6 +32,17 @@ let g:gitgutter_sign_modified_removed   = '◉'
 " Setting maximum number of signs displayed
 let g:gitgutter_max_signs = 2000
 
+
+""""""""""
+" COLORS "
+""""""""""
+
+highlight GitGutterChange ctermbg=NONE ctermfg=214
+highlight GitGutterAdd ctermbg=NONE ctermfg=46
+highlight GitGutterDelete ctermbg=NONE ctermfg=196
+highlight GitGutterChangeDelete ctermbg=NONE ctermfg=202
+highlight GitGutterAddLine ctermbg=NONE
+
 """"""""""""""""
 " MAPPINGS     "
 """"""""""""""""
