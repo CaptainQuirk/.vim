@@ -6,7 +6,8 @@
 function! RevertHunk()
   let choice = confirm("Do you really want to unstage this hunk ?", "&yes\n&no")
   if choice == 1
-    call gitgutter#revert_hunk()
+    call gitgutter#hunk#undo()
+    silent! exec ':w'
   endif
 endfunction
 
