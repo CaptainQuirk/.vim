@@ -28,10 +28,6 @@ let g:gitgutter_sign_removed            = '◇'
 let g:gitgutter_sign_removed_first_line = '▣'
 let g:gitgutter_sign_modified_removed   = '◉'
 
-" Setting realtime update
-let g:gitgutter_eager    = 1
-let g:gitgutter_realtime = 1
-
 " Setting maximum number of signs displayed
 let g:gitgutter_max_signs = 2000
 
