@@ -212,3 +212,6 @@
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht.git
+[submodule "bundle/vim-notmuch-address"]
+	path = bundle/vim-notmuch-address
+	url = https://github.com/adborden/vim-notmuch-address.git
