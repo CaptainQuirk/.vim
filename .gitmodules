@@ -215,3 +215,6 @@
 [submodule "bundle/vim-notmuch-address"]
 	path = bundle/vim-notmuch-address
 	url = https://github.com/adborden/vim-notmuch-address.git
+[submodule "bundle/vim-composer"]
+	path = bundle/vim-composer
+	url = https://github.com/noahfrederick/vim-composer.git
