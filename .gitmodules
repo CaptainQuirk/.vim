@@ -218,3 +218,6 @@
 [submodule "bundle/vim-composer"]
 	path = bundle/vim-composer
 	url = https://github.com/noahfrederick/vim-composer.git
+[submodule "bundle/phpactor"]
+	path = bundle/vim-composer
+	url = https://github.com/phpactor/phpactor.git
