@@ -179,9 +179,6 @@
 [submodule "bundle/ranger.vim"]
 	path = bundle/ranger.vim
 	url = https://github.com/francoiscabrol/ranger.vim.git
-[submodule "bundle/phpcd.vim"]
-	path = bundle/phpcd.vim
-	url = https://github.com/lvht/phpcd.vim.git
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
