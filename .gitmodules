@@ -191,9 +191,11 @@
 [submodule "bundle/vim-autocomplpop"]
 	path = bundle/vim-autocomplpop
 	url = https://github.com/othree/vim-autocomplpop.git
+  ignore = dirty
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = https://github.com/vim-scripts/L9.git
+  ignore = dirty
 [submodule "bundle/vim-closetag"]
 	path = bundle/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
@@ -218,3 +220,12 @@
 [submodule "bundle/phpactor"]
 	path = bundle/vim-composer
 	url = https://github.com/phpactor/phpactor.git
+[submodule "bundle/vim-ripgrep"]
+	path = bundle/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule "bundle/vim-docker"]
+	path = bundle/vim-docker
+	url = https://github.com/ain/vim-docker.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
