@@ -31,6 +31,7 @@ set modifiable
 set laststatus=2
 set showtabline=2
 set noshowmode
+set updatetime=100
 
 " Modeline for specific files
 set modeline
@@ -102,8 +103,14 @@ set hlsearch
 " INTERFACE "
 """""""""""""
 
-" Displaying line numbers
-set number
+" Hide line numbers
+set nonumber
+
+" always reserve space for the signcolumn
+set signcolumn=yes
+
+" Remove any SignColumn colors
+highlight clear SignColumn
 
 " Displaying ruler
 set ruler

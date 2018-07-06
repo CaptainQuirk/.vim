@@ -1,1 +1,1 @@
-let g:DisableAutoPHPFolding = 0
+let g:DisableAutoPHPFolding = 1

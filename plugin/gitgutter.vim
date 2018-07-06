@@ -6,7 +6,8 @@
 function! RevertHunk()
   let choice = confirm("Do you really want to unstage this hunk ?", "&yes\n&no")
   if choice == 1
-    call gitgutter#revert_hunk()
+    call gitgutter#hunk#undo()
+    silent! exec ':w'
   endif
 endfunction
 
@@ -22,18 +23,25 @@ endfunction
 """""""""""""""
 
 " Setting diff signs to same unicode circle char
-let g:gitgutter_sign_added              = '▞'
-let g:gitgutter_sign_modified           = '࿓'
-let g:gitgutter_sign_removed            = '៚'
-let g:gitgutter_sign_removed_first_line = '♭'
-let g:gitgutter_sign_modified_removed   = '⚡'
-
-" Setting realtime update
-let g:gitgutter_eager    = 1
-let g:gitgutter_realtime = 1
+let g:gitgutter_sign_added              = '◆'
+let g:gitgutter_sign_modified           = '◈'
+let g:gitgutter_sign_removed            = '◇'
+let g:gitgutter_sign_removed_first_line = '▣'
+let g:gitgutter_sign_modified_removed   = '◉'
 
 " Setting maximum number of signs displayed
 let g:gitgutter_max_signs = 2000
+
+
+""""""""""
+" COLORS "
+""""""""""
+
+highlight GitGutterChange ctermbg=NONE ctermfg=214
+highlight GitGutterAdd ctermbg=NONE ctermfg=46
+highlight GitGutterDelete ctermbg=NONE ctermfg=196
+highlight GitGutterChangeDelete ctermbg=NONE ctermfg=202
+highlight GitGutterAddLine ctermbg=NONE
 
 """"""""""""""""
 " MAPPINGS     "

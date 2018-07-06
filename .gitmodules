@@ -1,9 +1,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/ddollar/nerdcommenter.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -42,7 +39,7 @@
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = https://github.com/bling/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/table-mode"]
 	path = bundle/table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
@@ -182,9 +179,6 @@
 [submodule "bundle/ranger.vim"]
 	path = bundle/ranger.vim
 	url = https://github.com/francoiscabrol/ranger.vim.git
-[submodule "bundle/phpcd.vim"]
-	path = bundle/phpcd.vim
-	url = https://github.com/lvht/phpcd.vim.git
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
@@ -203,3 +197,24 @@
 [submodule "bundle/vim-closetag"]
 	path = bundle/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = https://github.com/tpope/vim-rake.git
+[submodule "bundle/vim-dasht"]
+	path = bundle/vim-dasht
+	url = https://github.com/sunaku/vim-dasht.git
+[submodule "bundle/vim-notmuch-address"]
+	path = bundle/vim-notmuch-address
+	url = https://github.com/adborden/vim-notmuch-address.git
+[submodule "bundle/vim-composer"]
+	path = bundle/vim-composer
+	url = https://github.com/noahfrederick/vim-composer.git
+[submodule "bundle/phpactor"]
+	path = bundle/vim-composer
+	url = https://github.com/phpactor/phpactor.git

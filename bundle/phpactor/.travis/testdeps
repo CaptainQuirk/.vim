@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Testing Phpactor dependencies"
+echo "============================="
+echo ""
+
+for dep in class-mover class-to-file code-builder code-transform source-code-filesystem worse-reflection completion docblock; do
+    echo ""
+    echo "Testing: "$dep
+    echo ""
+    cd vendor/phpactor/$dep
+
+    if [ ! -e vendor ]; then
+        ln -s ../../../vendor
+    fi
+    composer dumpautoload
+    vendor/bin/phpunit
+    cd -
+done
