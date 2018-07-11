@@ -59,6 +59,9 @@ set splitright
 
 set completeopt+=longest
 
+" allow local vimrc files
+set exrc
+
 " BEHAVIOR "
 """"""""""""
 
