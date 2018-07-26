@@ -1,7 +1,70 @@
 Changelog
 =========
 
-## master
+## 2018-07-02 0.7.0
+
+Features:
+
+  - [CodeTransforn] Extract expression
+  - [Application] Changed behavior of Transform command: accepts globs, shows
+    diffs and writes to files (rather than just dumping them to stdout if they
+    changed).
+  - [Completion] Support constant completion
+  - [Application] Use version from composer instead of hard-coded version.
+    Thanks @weirdan
+
+Improvements:
+
+  - [Completion] Support namespaced functions, fixes #473
+  - [Completion] Sort completion results alphabetically.
+  - [Docs] Added section on completion
+  - [WorseReflection] Explicitly do not support anonymous classes when
+    resolving nodes, fixes #505
+
+Bug fixes:
+
+  - [WorseReflection] Do not parse non-PHP files when building stub cache.
+  - [Completion] Fixed last non-whitespace char detection, fixes #504
+
+Misc
+
+  - Downgraded composer to 1.x as 2.x-dev now requires PHP 7.2
+
+## 2018-06-16 0.6.0
+
+Features:
+
+  - [CodeTransform] Transformer to fix namesapce / class name #474
+
+Improvements:
+
+  - [WorseReflection] Resolve UseNameVariables (e.g. context menu `use ($f<>oo)`). #466
+  - [Application] Improved status (show current version) #481
+  - [CodeTransform] Better handling of new file generation
+  - [Docs] Added Development section
+
+Bug fixes:
+
+  - [WorseReflection] access property on null error when resolving incomplete
+    function variable use.
+  - [CodeTransform] Generate method does can use pseudo type for return type #486
+  - [Vim Plugin] Goto reference in a modified file causes warning #477.
+  - [Application] Overridden CWD not being passed to `Paths` (affected config
+    file resolution).
+  - [Application] Fixed find references regression (only the current class
+    wasn't being checked for references..)
+
+## 2018-05-20 0.5.0
+
+Features:
+
+  - [Completion] Parameter completion, suggests variables that are valid for
+    the parameter position.
+
+Refactoring:
+
+  - [SourceCodeFilesystem] Public API accepts scalar paths in addition to
+    value objects.
 
 Improvements:
 
@@ -50,7 +113,7 @@ Bug fixes:
   - [Application] Fixed binary path, thanks @talbergs
   - [RPC] Specify completion type for text input, fixes #455
 
-Non-functional:
+Refactoring:
 
   - [WorseReflection] Full support for reflecting functions.
   - [WorseReflection] All member collections extend common interface,

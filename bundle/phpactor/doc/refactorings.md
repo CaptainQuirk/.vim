@@ -8,6 +8,7 @@ Fixes:
 
 - [Add Missing Assignments](#add-missing-assignments)
 - [Complete Constructor](#complete-constructor)
+- [Fix namespace and/or class name](#fix-namespace-or-class-name)
 - [Generate Accessor](#generate-accessor)
 - [Generate Method](#generate-method)
 - [Implement Contracts](#implement-contracts)
@@ -24,6 +25,7 @@ Refactoring:
 
 - [Class Move](#class-move)
 - [Extract Constant](#extract-constant)
+- [Extract Expression](#extract-expression)
 - [Extract Method](#extract-method)
 - [Rename Class](#rename-class)
 - [Rename Class Member](#rename-member)
@@ -75,6 +77,7 @@ class AcmeBlogTest extends TestCase
     }
 }
 ```
+
 Class Copy
 ----------
 
@@ -293,6 +296,64 @@ class Post
 }
 ```
 
+Fix Namespace or Class Name
+---------------------------
+
+Update a file's namespace (and/or class name) based on the composer
+configuration.
+
+- **Command**: `$ phpactor class:transform path/to/class.php --transform=complete_constructor`
+- **VIM plugin**: _Class context menu > Transform > Fix namespace or classname_.
+- **VIM function**: `:call phpactor#Transform()`
+
+<div class="alert alert-warning">
+This refactoring will currently only work fully on Composer based projects.
+</div>
+
+### Motivation
+
+Phpactor already has the possibility of generating new classes, and moving
+classes. But sometimes your project may get into a state where
+class-containing files have an incorrect namespace or class name.
+
+This refactoring will:
+
+- Update the namespace based on the file path (and the autoloading config).
+- Update the class name.
+- When given an empty file, it will generate a PHP tag and the namespace.
+
+### Before and After
+
+```php
+// lib/Barfoo/Hello.php
+<?php
+
+class Foobar
+{
+    public function hello()
+    {
+        echo 'hello';
+    }
+}
+```
+
+After:
+
+```php
+// lib/Barfoo/Hello.php
+<?php
+
+namespace Barfoo;
+
+class Hello
+{
+    public function hello()
+    {
+        echo 'hello';
+    }
+}
+```
+
 Extract Constant
 ----------------
 
@@ -359,6 +420,66 @@ class DecisionMaker
 	{
         return self::YES;
 	}
+}
+```
+
+Extract Expression
+------------------
+
+Extract an expression
+
+- **Command**: _VIM function only_
+- **VIM plugin**: _VIM function only_
+- **VIM function**:`:call phpactor#ExtractExpression()` (call with
+  `v:true` to invoke on a selection)
+
+### Motivation
+
+Sometimes you find yourself using inline expressions, and later you realise
+that you want to re-use that value.
+
+### Before and After
+
+Cursor position shown as `<>`:
+
+```php
+<?php
+
+if (<>1 + 2 + 3 + 5 === 6) {
+    echo 'You win!';
+}
+```
+
+After (entering `$hasWon` as a variable name):
+
+```php
+<?php
+
+$hasWon = 1 + 2 + 3 + 5 === 6;
+if ($hasWon) {
+    echo 'You win!';
+}
+```
+
+Note that this also works with a visual selection if you invoke the VIM
+function with `v:true`:
+
+```php
+<?php
+
+if (<>1 + 2 + 3 + 5<> === 6) {
+    echo 'You win!';
+}
+```
+
+After (using `$winningCombination` as a variable name):
+
+```php
+<?php
+
+$winningCombination = 1 + 2 + 3 + 5;
+if ($winningCombination == 6) {
+    echo 'You win!';
 }
 ```
 

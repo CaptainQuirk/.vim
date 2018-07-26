@@ -3,6 +3,7 @@
 namespace Phpactor\Extension\Core;
 
 use Composer\Autoload\ClassLoader;
+use Monolog\Handler\NullHandler;
 use Phpactor\Extension\Core\Application\Helper\ClassFileNormalizer;
 use Phpactor\Filesystem\Domain\Cwd;
 use Phpactor\Extension\Core\Console\Dumper\DumperRegistry;
@@ -75,6 +76,7 @@ class CoreExtension implements Extension
             $logger = new Logger('phpactor');
 
             if (false === $container->getParameter(self::LOGGING_ENABLED)) {
+                $logger->pushHandler(new NullHandler());
                 return $logger;
             }
 
@@ -206,7 +208,11 @@ class CoreExtension implements Extension
         });
 
         $container->register('application.status', function (Container $container) {
-            return new Status($container->get('source_code_filesystem.registry'));
+            return new Status(
+                $container->get('source_code_filesystem.registry'),
+                $container->get('config.paths'),
+                $container->getParameter(self::WORKING_DIRECTORY)
+            );
         });
     }
 }
