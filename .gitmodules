@@ -238,3 +238,6 @@
 [submodule "bundle/splitjoin.vim"]
 	path = bundle/splitjoin.vim
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "bundle/vim-bats"]
+	path = bundle/vim-bats
+	url = https://github.com/markcornick/vim-bats.git
