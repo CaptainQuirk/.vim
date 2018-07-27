@@ -238,3 +238,6 @@
 [submodule "vim-dispatch"]
 	path = vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
