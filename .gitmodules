@@ -238,3 +238,6 @@
 [submodule "bundle/gv.vim"]
 	path = bundle/gv.vim
 	url = https://github.com/junegunn/gv.vim.git
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = https://github.com/shawncplus/phpcomplete.vim.git
