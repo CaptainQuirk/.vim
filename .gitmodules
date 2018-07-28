@@ -236,3 +236,6 @@
 [submodule "bundle/vim-move"]
 	path = bundle/vim-move
 	url = https://github.com/matze/vim-move.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
