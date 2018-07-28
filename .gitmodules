@@ -160,8 +160,7 @@
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht.git
-[submodule "bundle/vim-composer"]
-	path = bundle/vim-composer
+[submodule "bundle/vim-ripgrep"]
 	path = bundle/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
 [submodule "bundle/vim-docker"]
