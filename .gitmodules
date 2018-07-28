@@ -236,3 +236,6 @@
 [submodule "bundle/vim-cycle"]
 	path = bundle/vim-cycle
 	url = https://github.com/zef/vim-cycle.git
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
