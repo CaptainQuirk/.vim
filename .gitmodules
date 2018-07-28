@@ -94,9 +94,6 @@
 [submodule "bundle/vim-projectionist"]
 	path = bundle/vim-projectionist
 	url = https://github.com/tpope/vim-projectionist.git
-[submodule "bundle/vim-mustache-handlebars"]
-	path = bundle/vim-mustache-handlebars
-	url = https://github.com/mustache/vim-mustache-handlebars.git
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
