@@ -236,3 +236,6 @@
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
+[submodule "bundle/vim-notmuch-address"]
+	path = bundle/vim-notmuch-address
+	url = https://github.com/adborden/vim-notmuch-address.git
