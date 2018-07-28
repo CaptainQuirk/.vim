@@ -236,3 +236,6 @@
 [submodule "bundle/vim-game-code-break"]
 	path = bundle/vim-game-code-break
 	url = https://github.com/johngrib/vim-game-code-break.git
+[submodule "bundle/vim-move"]
+	path = bundle/vim-move
+	url = https://github.com/matze/vim-move.git
