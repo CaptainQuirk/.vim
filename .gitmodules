@@ -198,11 +198,6 @@
 	url = https://github.com/adborden/vim-notmuch-address.git
 [submodule "bundle/vim-composer"]
 	path = bundle/vim-composer
-	url = https://github.com/noahfrederick/vim-composer.git
-[submodule "bundle/phpactor"]
-	path = bundle/vim-composer
-	url = https://github.com/phpactor/phpactor.git
-[submodule "bundle/vim-ripgrep"]
 	path = bundle/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
 [submodule "bundle/vim-docker"]
