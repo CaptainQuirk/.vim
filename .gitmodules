@@ -236,3 +236,6 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/vim-cycle"]
+	path = bundle/vim-cycle
+	url = https://github.com/zef/vim-cycle.git
