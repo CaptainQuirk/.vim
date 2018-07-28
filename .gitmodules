@@ -236,3 +236,6 @@
 [submodule "bundle/phpactor"]
 	path = bundle/phpactor
 	url = https://github.com/phpactor/phpactor.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
