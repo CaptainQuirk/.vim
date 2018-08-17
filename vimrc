@@ -238,10 +238,6 @@ autocmd BufRead,BufNewFile *.ctp set filetype=php
 " RELOAD "
 """"""""""
 
-" → reload vimrc
-nmap <leader>vr :call custom#Reload()<cr>
-
-
 """"""""""""""
 " QUICK OPEN "
 """"""""""""""
