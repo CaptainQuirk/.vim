@@ -241,3 +241,6 @@
 [submodule "bundle/vim-composer"]
 	path = bundle/vim-composer
 	url = https://github.com/noahfrederick/vim-composer.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/vim-vdebug/vdebug.git
