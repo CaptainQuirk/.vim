@@ -200,6 +200,7 @@
 	path = bundle/vim-bats
 	url = https://github.com/markcornick/vim-bats.git
 [submodule "bundle/phpactor"]
+  ignore = dirty
 	path = bundle/phpactor
 	url = https://github.com/phpactor/phpactor.git
 [submodule "bundle/vim-airline"]
