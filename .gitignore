@@ -2,3 +2,6 @@
 # Ignoring backup files
 *~
 *.swp
+
+# Ignore spell language files
+spell
