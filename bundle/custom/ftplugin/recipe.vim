@@ -10,7 +10,7 @@ syntax keyword recipeBoolean true false
 
 syntax match recipeVar "\$\<[A-Za-z_]*\>"
 
-syntax match recipeFunction /^\(git\|link\|file\|brew\|deb\|apt\|npm\|directory\|code\)/
+syntax match recipeFunction /^\(git\|link\|file\|brew\|deb\|apt\|npm\|directory\|code\|download\)/
 syntax match recipeComment "\v#.*$"
 syntax region recipeString start=/\v"/ end=/\v"/ contains=recipeVar
 
