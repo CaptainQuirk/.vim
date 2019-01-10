@@ -246,5 +246,5 @@
 	path = bundle/vdebug
 	url = https://github.com/vim-vdebug/vdebug.git
 [submodule "bundle/vim-test"]
-	path = bundle/vdebug
+	path = bundle/vim-test
 	url = https://github.com/janko-m/vim-test.git
