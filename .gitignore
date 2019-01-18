@@ -5,3 +5,6 @@
 
 # Ignore spell language files
 spell
+
+# Ignore view directory
+view
