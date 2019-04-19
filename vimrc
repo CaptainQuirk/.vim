@@ -137,6 +137,7 @@ set colorcolumn=80
 set foldlevelstart=999
 set foldmethod=manual
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
+set fillchars=fold:\ 
 
 
 " ENCODING "
