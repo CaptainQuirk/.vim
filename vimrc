@@ -196,6 +196,12 @@ else
   set clipboard=unnamed
 endif
 
+" UNDO "
+""""""""
+
+set undofile
+set undodir=~/.vim/undo
+
 
 " Interface
 " ---------

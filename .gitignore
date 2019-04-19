@@ -8,3 +8,6 @@ spell
 
 # Ignore view directory
 view
+
+# Ignore undo directory
+undo
