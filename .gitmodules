@@ -134,9 +134,6 @@
 [submodule "bundle/vim-cucumber"]
 	path = bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
-[submodule "bundle/ranger.vim"]
-	path = bundle/ranger.vim
-	url = https://github.com/francoiscabrol/ranger.vim.git
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
@@ -248,3 +245,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = https://github.com/janko-m/vim-test.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
