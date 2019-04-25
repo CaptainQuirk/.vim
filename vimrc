@@ -326,3 +326,10 @@ nmap <leader>L mQgewvu`Q
 """"""""""""""
 
 nmap - :e . <CR>
+
+" Open a new file explorer in new vertical split
+nmap \| :vs . <CR>
+
+" Kill current buffer
+nnoremap Q :bd <CR>
+
