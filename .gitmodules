@@ -254,3 +254,12 @@
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "bundle/ctrlp-history"]
+	path = bundle/ctrlp-history
+	url = https://github.com/ompugao/ctrlp-history.git
+[submodule "bundle/ctrlp-modified.vim"]
+	path = bundle/ctrlp-modified.vim
+	url = https://github.com/jasoncodes/ctrlp-modified.vim.git
+[submodule "bundle/ctrlp-branches"]
+	path = bundle/ctrlp-branches
+	url = https://github.com/signalnerve/ctrlp-branches.git
