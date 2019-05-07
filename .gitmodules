@@ -263,3 +263,6 @@
 [submodule "bundle/ctrlp-branches"]
 	path = bundle/ctrlp-branches
 	url = https://github.com/signalnerve/ctrlp-branches.git
+[submodule "bundle/git-messenger.vim"]
+	path = bundle/git-messenger.vim
+	url = https://github.com/rhysd/git-messenger.vim.git
