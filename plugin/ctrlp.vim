@@ -25,7 +25,7 @@ nnoremap <leader>pt :CtrlPBufTag<CR>
 " EXTENSIONS "
 """"""""""""""
 
-let g:ctrlp_extensions = [ 'cmd-palette', 'history', 'modified', 'branches' ]
+let g:ctrlp_extensions = [ 'cmd-palette', 'history', 'modified', 'branches', 'unicode' ]
 
 " cmd-palette
 """"""""""""""
@@ -47,3 +47,7 @@ nnoremap <leader>ps :CtrlPSearchHistory<CR>
 
 nnoremap <leader>pgb :CtrlPBranches<CR>
 
+" unicode
+"""""""""
+
+nnoremap <leader>pu :CtrlPUnicode<CR>

@@ -267,3 +267,6 @@
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
+[submodule "bundle/vim-ctrlp-unicode"]
+	path = bundle/vim-ctrlp-unicode
+	url = https://github.com/suy/vim-ctrlp-unicode.git
