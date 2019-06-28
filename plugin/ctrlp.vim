@@ -46,6 +46,7 @@ nnoremap <leader>ps :CtrlPSearchHistory<CR>
 """""""""""
 
 nnoremap <leader>pgb :CtrlPBranches<CR>
+nnoremap <leader>pgm :CtrlPModified<CR>
 
 " unicode
 """""""""
