@@ -31,6 +31,11 @@ nnoremap <leader>gp :Gpush origin `git rev-parse --abbrev-ref HEAD`
 " -> reset last commit
 nnoremap <leader>gr :Git reset HEAD~1<CR>
 
+" → Navigate to repository root
+augroup nav_to_repo_root
+    autocmd FileType netrw nnoremap <buffer> g~ :Gedit :/<CR>
+augroup END
+
 " GV
 " --
 
