@@ -1,4 +1,3 @@
-
 # Ignoring backup files
 *~
 *.swp
@@ -6,8 +5,8 @@
 # Ignore spell language files
 spell
 
-# Ignore view directory
-view
-
 # Ignore undo directory
-undo
+tmp/undo
+tmp/swp
+tmp/backup
+tmp/view

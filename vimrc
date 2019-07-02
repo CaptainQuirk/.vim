@@ -80,12 +80,6 @@ set autoread
 highlight ExtraWhitespace ctermbg=darkred
 
 
-" FILE HANDLING "
-"""""""""""""""""
-
-" → Do not use swap files
-set noswapfile
-
 
 " SEARCHING "
 """""""""""""
@@ -197,11 +191,22 @@ else
   set clipboard=unnamed
 endif
 
-" UNDO "
-""""""""
+" FILE HANDLING "
+"""""""""""""""""
+
+" SWAP
+set directory=~/.vim/tmp/swp//
+
+" BACKUP
+
+set backup
+set backupcopy=yes
+set backupdir=~/.vim/tmp/backup//
+
+" UNDO
 
 set undofile
-set undodir=~/.vim/undo
+set undodir=~/.vim/tmp/undo//
 
 
 " Interface
