@@ -330,8 +330,6 @@ nmap <leader>L mQgewvu`Q
 " NAVIGATION "
 """"""""""""""
 
-nmap - :e . <CR>
-
 " Open a new file explorer in new vertical split
 nmap \| :vs . <CR>
 
