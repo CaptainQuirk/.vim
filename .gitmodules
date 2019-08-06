@@ -270,3 +270,6 @@
 [submodule "bundle/fzf"]
 	path = bundle/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "bundle/ranger.vim"]
+	path = bundle/ranger.vim
+	url = https://github.com/rafaqz/ranger.vim.git
