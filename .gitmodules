@@ -273,3 +273,6 @@
 [submodule "bundle/ranger.vim"]
 	path = bundle/ranger.vim
 	url = https://github.com/rafaqz/ranger.vim.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
