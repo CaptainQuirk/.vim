@@ -1,6 +1,6 @@
 " → Searching for files in folder with .git
 " as a root reference if it exists
-nnoremap <leader>pf :GFiles<CR>
+nnoremap <leader>pf :Files<CR>
 
 " → Searching in buffers
 nnoremap <leader>pb :History<CR>
@@ -10,6 +10,8 @@ nnoremap <leader>ph :History:<CR>
 
 " → Searching in command history
 nnoremap <leader>ps :History\\<CR>
+" → Searching git files
+nnoremap <leader>pgf :GFiles<CR>
 
 " → Searching in modified files
 nnoremap <leader>pgm :GFiles?<CR>
