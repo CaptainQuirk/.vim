@@ -57,7 +57,7 @@ set wildmenu
 set switchbuf=useopen,usetab
 set splitright
 
-set completeopt+=longest
+set completeopt+=menu,menuone,popup,noinsert
 
 " allow local vimrc files
 set exrc
