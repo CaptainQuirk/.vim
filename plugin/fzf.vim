@@ -9,7 +9,8 @@ nnoremap <leader>pb :History<CR>
 nnoremap <leader>ph :History:<CR>
 
 " → Searching in command history
-nnoremap <leader>ps :History\\<CR>
+nnoremap <leader>ps :History/<CR>
+
 " → Searching git files
 nnoremap <leader>pgf :GFiles<CR>
 
