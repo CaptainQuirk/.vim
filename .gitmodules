@@ -231,9 +231,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = https://github.com/janko-m/vim-test.git
-[submodule "bundle/vim-nerdtree-syntax-highlight"]
-	path = bundle/vim-nerdtree-syntax-highlight
-	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
 [submodule "bundle/ctrlp-history"]
 	path = bundle/ctrlp-history
 	url = https://github.com/ompugao/ctrlp-history.git
