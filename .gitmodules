@@ -243,9 +243,6 @@
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
-[submodule "bundle/vim-ctrlp-unicode"]
-	path = bundle/vim-ctrlp-unicode
-	url = https://github.com/suy/vim-ctrlp-unicode.git
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
