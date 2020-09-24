@@ -246,9 +246,6 @@
 [submodule "bundle/ctrlp-modified.vim"]
 	path = bundle/ctrlp-modified.vim
 	url = https://github.com/jasoncodes/ctrlp-modified.vim.git
-[submodule "bundle/ctrlp-branches"]
-	path = bundle/ctrlp-branches
-	url = https://github.com/signalnerve/ctrlp-branches.git
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
