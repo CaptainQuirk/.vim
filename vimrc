@@ -57,7 +57,6 @@ set wildmenu
 set switchbuf=useopen,usetab
 set splitright
 
-set completeopt+=menu,menuone,popup,noinsert
 
 " allow local vimrc files
 set exrc
@@ -336,3 +335,9 @@ nmap \| :vs . <CR>
 " Kill current buffer
 nnoremap Q :bd <CR>
 
+""""""""""""""
+" COMPLETION "
+""""""""""""""
+
+set completeopt+=menu,menuone,popup,noinsert
+set shortmess+=c
