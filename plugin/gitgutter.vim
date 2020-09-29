@@ -22,13 +22,6 @@ endfunction
 " SETTINGS    "
 """""""""""""""
 
-" Setting diff signs to same unicode circle char
-let g:gitgutter_sign_added              = '◆'
-let g:gitgutter_sign_modified           = '◈'
-let g:gitgutter_sign_removed            = '◇'
-let g:gitgutter_sign_removed_first_line = '▣'
-let g:gitgutter_sign_modified_removed   = '◉'
-
 " Setting maximum number of signs displayed
 let g:gitgutter_max_signs = 2000
 
