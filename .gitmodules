@@ -217,9 +217,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = https://github.com/janko-m/vim-test.git
-[submodule "bundle/ctrlp-history"]
-	path = bundle/ctrlp-history
-	url = https://github.com/ompugao/ctrlp-history.git
 [submodule "bundle/git-messenger.vim"]
 	path = bundle/git-messenger.vim
 	url = https://github.com/rhysd/git-messenger.vim.git
