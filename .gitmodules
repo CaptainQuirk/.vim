@@ -146,9 +146,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/vim-gtfo"]
 	path = bundle/vim-gtfo
 	url = https://github.com/justinmk/vim-gtfo.git
