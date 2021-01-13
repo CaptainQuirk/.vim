@@ -241,6 +241,7 @@
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+	ignore = dirty
 [submodule "bundle/direnv.vim"]
 	path = bundle/direnv.vim
 	url = https://github.com/direnv/direnv.vim.git
