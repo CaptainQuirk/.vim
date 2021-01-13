@@ -247,3 +247,9 @@
 [submodule "bundle/vim-merginal"]
 	path = bundle/vim-merginal
 	url = https://github.com/idanarye/vim-merginal.git
+[submodule "bundle/vim-dadbod"]
+	path = bundle/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod.git
+[submodule "bundle/vim-dadbod-ui"]
+	path = bundle/vim-dadbod-ui
+	url = https://github.com/kristijanhusak/vim-dadbod-ui.git
