@@ -22,7 +22,7 @@ endfunction
 """""""""""""""
 
 " Setting maximum number of signs displayed
-let g:gitgutter_max_signs = 2000
+let g:gitgutter_max_signs = -1
 
 
 """"""""""
