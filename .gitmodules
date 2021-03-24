@@ -257,3 +257,6 @@
 [submodule "bundle/vim-dadbod-completion"]
 	path = bundle/vim-dadbod-completion
 	url = https://github.com/kristijanhusak/vim-dadbod-completion.git
+[submodule "bundle/vim-doge"]
+	path = bundle/vim-doge
+	url = https://github.com/kkoomen/vim-doge
