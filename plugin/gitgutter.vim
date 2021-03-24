@@ -12,9 +12,8 @@ function! RevertHunk()
 endfunction
 
 function! CommitHunk()
-  let message = input('Message : ')
-  call gitgutter#stage_hunk()
-  silent! exec ':Git commit -m "' . message . '"'
+  call gitgutter#hunk#stage()
+  exec ':Git commit -v'
 endfunction
 
 
