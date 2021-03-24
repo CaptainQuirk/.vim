@@ -48,3 +48,6 @@ nnoremap <leader>hr :call RevertHunk()<CR>
 
 " Mapping custom CommitHunk function
 nnoremap <leader>hc :call CommitHunk()<CR>
+
+" Mapping quickfix hunks summary
+nnoremap <leader>hq :GitGutterQuickFix \| copen<CR>
