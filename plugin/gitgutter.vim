@@ -45,4 +45,6 @@ nnoremap <leader>< :GitGutterPrevHunk<CR>
 
 " Remapping revert hunk to ask for confirmation
 nnoremap <leader>hr :call RevertHunk()<CR>
+
+" Mapping custom CommitHunk function
 nnoremap <leader>hc :call CommitHunk()<CR>
