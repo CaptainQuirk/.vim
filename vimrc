@@ -194,18 +194,18 @@ endif
 """""""""""""""""
 
 " SWAP
-set directory=~/.vim/tmp/swp//
+set directory=~/.vim/tmp/swp/
 
 " BACKUP
 
 set backup
 set backupcopy=yes
-set backupdir=~/.vim/tmp/backup//
+set backupdir=~/.vim/tmp/backup/
 
 " UNDO
 
 set undofile
-set undodir=~/.vim/tmp/undo//
+set undodir=~/.vim/tmp/undo/
 
 
 " Interface
