@@ -204,10 +204,27 @@ set backupdir=~/.vim/tmp/backup/
 
 " UNDO
 
-set undofile
-set undodir=~/.vim/tmp/undo/
+" Checks the presence of an `~/.ecryptfs` folder that indicates
+" an encrypted home folder and thus a lower length for filenames.
+" Since persistent undo uses the absolute path of a file (with % instead of /)
+" it can be pretty long. Undo won't work in some cases.
+function CanCreateLongUndoFileNames()
+  let crypt_folder=expand("~/.ecryptfs")
+  if empty(glob(crypt_folder))
+    return 1
+  else
+    return 0
+  endif
+endfunction
 
-
+if CanCreateLongUndoFileNames()
+  echom "Can create long undo filenames"
+  set undofile
+  let $VIMCDIR=getcwd()
+  set undodir=$VIMCDIR/.vim/tmp/undo/
+else
+  echom "Cannot create long undo filenames"
+endif
 " Interface
 " ---------
 
