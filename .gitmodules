@@ -97,9 +97,6 @@
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = https://github.com/rking/ag.vim.git
-[submodule "bundle/vim-php-cs-fixer"]
-	path = bundle/vim-php-cs-fixer
-	url = https://github.com/stephpy/vim-php-cs-fixer.git
 [submodule "bundle/vim-action-ag"]
 	path = bundle/vim-action-ag
 	url = https://github.com/Chun-Yang/vim-action-ag.git
