@@ -1,1 +1,2 @@
-let g:php_cs_fixer_rules = "@PSR2"
+autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()<CR>
+
